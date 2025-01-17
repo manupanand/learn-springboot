@@ -7,6 +7,7 @@ public class Main{
            float pricePerTickets=10.57f;
            float totalPrice=numberOfTickets*pricePerTickets;
            String userName=(firstName+lastName).toLowerCase();
+           int amountOfMoney=300;
            
 
            System.out.println("Congratulations!! You have successfully booked tickets"+"\n"+ 
@@ -16,7 +17,13 @@ public class Main{
             "Price per ticket: $"+pricePerTickets+"\n"+
             "Total price of 8 tickets: $"+totalPrice+"\n"+
             "\n"+
-            "Thank you for choosing us for booking your movie tickets \n "+
+            "Thank you for choosing us for booking your movie tickets \n"+
             "Enjoy your movie!!!");
-
+            if(amountOfMoney>200){
+                System.out.println("Go to delhi");
+            }else if(amountOfMoney<200){
+                System.out.println("Check the money spent");
+            }else{
+                System.out.println("go to parents home");
+            }
     }}
