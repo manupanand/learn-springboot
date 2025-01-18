@@ -3,6 +3,7 @@ public class Basic {
         String language="nee mile class";
         String empy_string="";
         String newData= "    manu is a coder ";
+        String new_word="Manu";
         System.out.println(language.toUpperCase());
         System.out.println(language.startsWith("n"));
         System.out.println(language.endsWith("ass"));
@@ -13,5 +14,9 @@ public class Basic {
         System.out.println(language.substring(3));
         System.out.println(language.substring(2, 5));
         System.out.println(newData.trim());
+        //compare string
+        //compare without considering case sensitivity
+        System.out.println(new_word.equalsIgnoreCase("manu"));
+
     }
 }
